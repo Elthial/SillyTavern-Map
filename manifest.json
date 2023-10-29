@@ -1,0 +1,11 @@
+{
+    "display_name": "Map Extension",
+    "loading_order": 9,
+    "requires": [],
+    "optional": [],
+    "js": "index.js",
+    "css": "style.css",
+    "author": "Elthial",
+    "version": "1.0.0",
+    "homePage": "https://github.com/Elthial/SillyTavern-Map"
+}

@@ -1,0 +1,33 @@
+{
+	"backgroundImage": 	{
+			"file" : "scripts/extensions/third-party/SillyTavern-Map/Japan.png", 
+			"height" : "1024",
+			"width" : "1792"
+		},
+	"shapes": [
+		{
+			"id": "Player-house",
+			"path": "M 150 500 L 193 385 L 261 345 L 330 400 L 330 435 L 365 455 L 360 510 L 285 550 Z",
+			"color": "#CC0000",
+			"script": "/go flux | /bg bedroom clean | /sys {{user}} returns home and finds {{char}} lying on their bed."
+		},
+		{
+			"id": "convenience-store",
+			"path": "M 620 445 L 620 425 L 640 417 L 640 400 L 670 384 L 670 340 L 720 316 L 797 325 L 797 370 L  810 382 L 802 384 L 804 428 L 705 491 Z",
+			"color": "#0000CC",
+			"script": "/go Coding Sensei | /bg japan classroom | /sys {{user}} enters {{char}}'s house"
+		},
+		{
+			"id": "Park",
+			"path": "M 760 521 L 1098 332 L 1325 452 L 981 635 Z",
+			"color": "#00CC00",
+			"script": "/go flux | /bg landscape autumn great tree | /sys {{user}} walks around the park finding {{char}} resting under a tree"
+		},
+		{
+			"id": "Girls-house",
+			"path": "M 1488 497 L 1486 469 L 1477 462 L 1484 449 L 1488 408 L 1571 358 L 1625 399 L 1623 484 L 1550 528 Z",
+			"color": "#cc0000",
+			"script": "/go Seraphina | /bg bedroom tatami | /sys {{user}} enters {{char}}'s house"
+		}  		
+	]
+}

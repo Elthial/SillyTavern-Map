@@ -1,0 +1,66 @@
+
+#map {
+	position: absolute;	
+    margin: 0 auto;
+	left: 0;
+	right: 0;
+	width: var(--sheldWidth);
+	top: var(--topBarBlockSize);
+	bottom: 40svh;
+	overflow: hidden;
+}
+
+#map img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; /* or cover, based on your preference */
+}
+
+.container {
+            /*max-width: 1000px;
+            max-height: 1000px;*/
+            border: 1px solid #000; /* Optional: just to show the boundary of the div */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+.container svg {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/*will apply to anything 1000px or less. this catches ipads, horizontal phones, and vertical phones)*/
+@media screen and (max-width: 1000px) {
+
+    #map {    
+		width: 100% !important;
+        margin: 0 auto;
+        max-width: 100%;
+        left: 0 !important;
+        resize: none !important;
+        top: var(--topBarBlockSize);
+		height: calc(100vh - (40svh + var(--topBarBlockSize)))  !important;  
+    }
+}
+
+/*iOS specific*/
+@supports (-webkit-touch-callout: none) {  
+     #map {
+        margin: unset;
+        padding: unset;
+        width: unset;
+        height: unset;
+        min-width: unset;
+        max-width: unset;
+        min-height: unset;
+        max-height: unset;
+        width: 100vw;
+        width: 100svw;
+        height: calc(100vh - 36px);
+        height: calc(100svh - 36px);
+        padding-right: max(env(safe-area-inset-right), 0px);
+        padding-left: max(env(safe-area-inset-left), 0px);
+        padding-bottom: 0;
+    } 
+}
